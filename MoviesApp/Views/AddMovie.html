@@ -1,0 +1,24 @@
+﻿<table ng-app="MoviesApp" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Director</th>
+            <th>Rating</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody ng-controller="MoviesController">
+        <tr>
+            <td><input ng-modal="movie.name" class="form-control"/> </td>
+            <td><input ng-modal="movie.year" class="form-control" /> </td>
+            <td><input ng-modal="movie.director" class="form-control" /></td>
+            <td><input ng-modal="movie.rating" class="form-control" /> </td>
+            <td>
+                <button ng-click="addMovie(movie)" class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
